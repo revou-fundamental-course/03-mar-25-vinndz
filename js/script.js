@@ -15,6 +15,13 @@ document.getElementById("message-form").addEventListener("submit", function(even
     const jenisKelamin = document.querySelector('input[name="jenis-kelamin"]:checked')?.value;
     const pesan = document.getElementById("pesan").value;
 
+    // Cek apakah nama tidak kosong, jika kosong set default "Guest"
+    if (name.trim() !== "") {
+        document.getElementById("name-placeholder").textContent = name + ", Welcome to Our Website";
+    } else {
+        document.getElementById("name-placeholder").textContent = "Guest";
+    }
+
     // Fungsi untuk memformat tanggal menjadi format DD/MM/YYYY
     function formatDate(dateString) {
         const date = new Date(dateString);
@@ -57,4 +64,11 @@ document.getElementById("message-form").addEventListener("submit", function(even
 
     // Menampilkan output container
     outputContainer.style.display = "block";
+
+    // Mengosongkan form
+    document.getElementById("name").value = '';
+    document.getElementById("tanggal-lahir").value = '';
+    const radios = document.getElementsByName("jenis-kelamin");
+    radios.forEach(radio => radio.checked = false); 
+    document.getElementById("pesan").value = '';
 });
