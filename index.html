@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
+            <div class="logo animate__animated animate__fadeIn">
                 <a href="#">MyLogo</a>
             </div>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger animate__animated animate__fadeIn" id="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#our-profile">Our Profile</a></li>
-                <li><a href="#achievment">Achievement</a></li>
-                <li><a href="#message-us">Message Us</a></li>
+                <li><a href="#" class="animate__animated animate__fadeIn ">Home</a></li>
+                <li><a href="#our-profile" class="animate__animated animate__fadeIn">Our Profile</a></li>
+                <li><a href="#achievment" class="animate__animated animate__fadeIn">Achievement</a></li>
+                <li><a href="#message-us" class="animate__animated animate__fadeIn">Message Us</a></li>
             </ul>
         </nav>
+
         <div class="our-profile" id="our-profile">
-            <h1>Our Profile</h1>
-            <img src="image/company.jpg" alt="Company" class="profile-image">
+            <h1 class="animate__animated animate__fadeIn animate__delay-1s">Our Profile</h1>
+            <img src="image/company.jpg" alt="Company" class="profile-image animate__animated animate__fadeIn animate__delay-2s">
         </div>
         
         <div class="achievment" id="achievment">
-            <h1>Our Facilitation</h1>
+            <h1 class="animate__animated animate__fadeIn animate__delay-2s">Our Facilitation</h1>
             <div class="image-container">
-                <figure class="image-item">
+                <figure class="image-item animate__animated animate__fadeInUp animate__delay-3s">
                     <img src="image/teacher.jpeg" alt="Gym" class="circle-image">
                     <figcaption>Teacher</figcaption>
                 </figure>
-                <figure class="image-item">
+                <figure class="image-item animate__animated animate__fadeInUp animate__delay-4s">
                     <img src="image/gym.jpeg" alt="Gym" class="circle-image">
                     <figcaption>Gym</figcaption>
                 </figure>
-                <figure class="image-item">
+                <figure class="image-item animate__animated animate__fadeInUp animate__delay-5s">
                     <img src="image/classroom.jpg" alt="Classroom" class="circle-image">
                     <figcaption>Classroom</figcaption>
                 </figure>
@@ -49,24 +51,27 @@
         
         <div class="container">
             <div class="message-us" id="message-us">
-                <h1>Message Us</h1>
+                <h1 class="animate__animated animate__fadeIn animate__delay-1s">Message Us</h1>
                 <form id="message-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="tanggal-lahir">Tanggal Lahir:</label>
-                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
-                    <label for="jenis-kelamin">Jenis Kelamin:</label>
+                    <label for="name" class="animate__animated animate__fadeIn animate__delay-2s">Name:</label>
+                    <input type="text" id="name" name="name" required class="animate__animated animate__fadeIn animate__delay-3s">
+                    
+                    <label for="tanggal-lahir" class="animate__animated animate__fadeIn animate__delay-4s">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" required class="animate__animated animate__fadeIn animate__delay-5s">
+                    
+                    <label for="jenis-kelamin" class="animate__animated animate__fadeIn animate__delay-6s">Jenis Kelamin:</label>
                     <div class="gender-options">
-                        <label for="laki-laki">
+                        <label for="laki-laki" class="animate__animated animate__fadeIn animate__delay-7s">
                             <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki - Laki" required>Laki-Laki
                         </label>
-                        <label for="perempuan">
+                        <label for="perempuan" class="animate__animated animate__fadeIn animate__delay-8s">
                             <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>Perempuan
                         </label>
-                    </div>   
-                    <label for="pesan">Pesan:</label>
-                    <textarea id="pesan" name="pesan" required></textarea>
-                    <button type="submit">Submit</button>
+                    </div>
+                    
+                    <label for="pesan" class="animate__animated animate__fadeIn animate__delay-9s">Pesan:</label>
+                    <textarea id="pesan" name="pesan" required class="animate__animated animate__fadeIn animate__delay-10s"></textarea>
+                    <button type="submit" class="animate__animated animate__zoomIn animate__delay-11s">Submit</button>
                 </form>
             </div>
             
@@ -74,10 +79,10 @@
                 <div id="output"></div>
             </div>
         </div>
-        
-        
     </header>
-    <footer class="footer">created by Jeremy Kevin M.</footer>
+
+    <footer class="footer animate__animated animate__fadeIn animate__delay-12s">created by Jeremy Kevin M.</footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
