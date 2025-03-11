@@ -174,13 +174,13 @@ body {
 /* !! End Responsive Section Our Profile */
 
 
-/* !! Section Achievement  */
-.achievment {
+/* !! Section Our Facilitation  */
+.our-facilitation {
     padding: 20px;
     background-color: #f9f9f9;
 }
 
-.achievment h1 {
+.our-facilitation h1 {
     font-size: 36px;
     margin-bottom: 30px;
     color: #333;
@@ -220,12 +220,12 @@ figcaption {
     color: #333;
     text-transform: capitalize;
 }
-/* !! End Section Achievement */
+/* !! End Section Our Facilitation */
 
 
-/* !! Responsive Section Achievement */
+/* !! Responsive Section Our Facilitation */
 @media (max-width: 768px) {
-    .achievment h1 {
+    .our-facilitation h1 {
         font-size: 30px;
         margin-bottom: 20px;
     }
@@ -246,7 +246,7 @@ figcaption {
 }
 
 @media (max-width: 480px) {
-    .achievment h1 {
+    .our-facilitation h1 {
         font-size: 24px; 
         margin-bottom: 15px;
     }
@@ -265,7 +265,7 @@ figcaption {
         font-size: 14px; 
     }
 }
-/* !! End Responsive Section Achievement */
+/* !! End Responsive Section Our Facilitation */
 
 
 /* !! section message us */
