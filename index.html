@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MyLogo</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#achievment">Achievement</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+        <div class="our-profile" id="our-profile">
+            <h1>Our Profile</h1>
+            <img src="image/company.jpg" alt="Company" class="profile-image">
+        </div>
+        
+        <div class="achievment" id="achievment">
+            <h1>Our Facilitation</h1>
+            <div class="image-container">
+                <figure class="image-item">
+                    <img src="image/teacher.jpeg" alt="Gym" class="circle-image">
+                    <figcaption>Teacher</figcaption>
+                </figure>
+                <figure class="image-item">
+                    <img src="image/gym.jpeg" alt="Gym" class="circle-image">
+                    <figcaption>Gym</figcaption>
+                </figure>
+                <figure class="image-item">
+                    <img src="image/classroom.jpg" alt="Classroom" class="circle-image">
+                    <figcaption>Classroom</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="message-us" id="message-us">
+                <h1>Message Us</h1>
+                <form id="message-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="tanggal-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                    <label for="jenis-kelamin">Jenis Kelamin:</label>
+                    <div class="gender-options">
+                        <label for="laki-laki">
+                            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki - Laki" required>Laki-Laki
+                        </label>
+                        <label for="perempuan">
+                            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>Perempuan
+                        </label>
+                    </div>   
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
+            <div class="output-container" id="output-container">
+                <div id="output"></div>
+            </div>
+        </div>
+        
+        
+    </header>
+    <footer class="footer">created by Jeremy Kevin M.</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
